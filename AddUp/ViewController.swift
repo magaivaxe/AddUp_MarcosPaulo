@@ -2,7 +2,7 @@
 import UIKit
 //=================================
 class ViewController: UIViewController {
-    //# MARK: - IBOutlets
+  //# MARK: - IBOutlets
     @IBOutlet weak var labelNumberToDisplay: UILabel!
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var plusSign: UILabel!
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.quebecTaxesObj = QuebecTaxes()
-        self.labelNumberToDisplay.text = self.informationToDisplay(theSum: self.addUpArray())
+       self.labelNumberToDisplay.text = self.informationToDisplay(theSum: self.addUpArray())
         self.totalAmount = self.addUpArray()
         if self.plusButton.alpha == 0.2 {
             self.plusSign.alpha = 1.0

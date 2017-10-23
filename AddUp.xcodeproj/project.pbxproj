@@ -15,6 +15,19 @@
 		9D741FF21D74BA260064B267 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D741FF11D74BA260064B267 /* Singleton.swift */; };
 		9D7E0FCD1D75D67800D2ADFA /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E0FCC1D75D67800D2ADFA /* TableController.swift */; };
 		9DC7199C1D77229C0063670B /* QuebecTaxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7199B1D77229C0063670B /* QuebecTaxes.swift */; };
+		BF082F8F1F9E9DD50049F01C /* calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = BF082F8E1F9E9DD50049F01C /* calculator.png */; };
+		BF082F911F9EA2A50049F01C /* simple_picker.png in Resources */ = {isa = PBXBuildFile; fileRef = BF082F901F9EA2A50049F01C /* simple_picker.png */; };
+		BF082F931F9EA8530049F01C /* simple_picker2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF082F921F9EA8520049F01C /* simple_picker2.png */; };
+		BF082F951F9EABFB0049F01C /* set.png in Resources */ = {isa = PBXBuildFile; fileRef = BF082F941F9EABFB0049F01C /* set.png */; };
+		BF36E46F1F9E3584004E6C0F /* ls.png in Resources */ = {isa = PBXBuildFile; fileRef = BF36E46E1F9E3584004E6C0F /* ls.png */; };
+		BF36E4751F9E4E29004E6C0F /* FranklinGothicMediumCondRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF36E4741F9E4E28004E6C0F /* FranklinGothicMediumCondRegular.ttf */; };
+		BF36E47F1F9E5EF5004E6C0F /* taxes_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BF36E47C1F9E5EF4004E6C0F /* taxes_button.png */; };
+		BF36E4801F9E5EF5004E6C0F /* cal_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BF36E47D1F9E5EF5004E6C0F /* cal_button.png */; };
+		BF36E4811F9E5EF5004E6C0F /* erase_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BF36E47E1F9E5EF5004E6C0F /* erase_button.png */; };
+		BF36E4831F9E6897004E6C0F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF36E4821F9E6897004E6C0F /* logo.png */; };
+		BF36E4851F9E69BB004E6C0F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BF36E4841F9E69BB004E6C0F /* bg.png */; };
+		BF36E4871F9E6D30004E6C0F /* img_taxes.png in Resources */ = {isa = PBXBuildFile; fileRef = BF36E4861F9E6D30004E6C0F /* img_taxes.png */; };
+		BF36E4891F9E809C004E6C0F /* budget.png in Resources */ = {isa = PBXBuildFile; fileRef = BF36E4881F9E809C004E6C0F /* budget.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,19 @@
 		9D741FF11D74BA260064B267 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		9D7E0FCC1D75D67800D2ADFA /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		9DC7199B1D77229C0063670B /* QuebecTaxes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuebecTaxes.swift; sourceTree = "<group>"; };
+		BF082F8E1F9E9DD50049F01C /* calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calculator.png; path = Images/calculator.png; sourceTree = "<group>"; };
+		BF082F901F9EA2A50049F01C /* simple_picker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = simple_picker.png; path = Images/simple_picker.png; sourceTree = "<group>"; };
+		BF082F921F9EA8520049F01C /* simple_picker2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = simple_picker2.png; path = Images/simple_picker2.png; sourceTree = "<group>"; };
+		BF082F941F9EABFB0049F01C /* set.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = set.png; path = Images/set.png; sourceTree = "<group>"; };
+		BF36E46E1F9E3584004E6C0F /* ls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ls.png; path = Images/ls.png; sourceTree = "<group>"; };
+		BF36E4741F9E4E28004E6C0F /* FranklinGothicMediumCondRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FranklinGothicMediumCondRegular.ttf; path = Fonts/FranklinGothicMediumCondRegular.ttf; sourceTree = "<group>"; };
+		BF36E47C1F9E5EF4004E6C0F /* taxes_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = taxes_button.png; path = Images/taxes_button.png; sourceTree = "<group>"; };
+		BF36E47D1F9E5EF5004E6C0F /* cal_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cal_button.png; path = Images/cal_button.png; sourceTree = "<group>"; };
+		BF36E47E1F9E5EF5004E6C0F /* erase_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = erase_button.png; path = Images/erase_button.png; sourceTree = "<group>"; };
+		BF36E4821F9E6897004E6C0F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Images/logo.png; sourceTree = "<group>"; };
+		BF36E4841F9E69BB004E6C0F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = Images/bg.png; sourceTree = "<group>"; };
+		BF36E4861F9E6D30004E6C0F /* img_taxes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_taxes.png; path = Images/img_taxes.png; sourceTree = "<group>"; };
+		BF36E4881F9E809C004E6C0F /* budget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = budget.png; path = Images/budget.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +104,7 @@
 		9DA1D6811D7620FA0084B01E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				BF36E4741F9E4E28004E6C0F /* FranklinGothicMediumCondRegular.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -85,6 +112,18 @@
 		9DA1D6821D7621090084B01E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BF082F941F9EABFB0049F01C /* set.png */,
+				BF082F921F9EA8520049F01C /* simple_picker2.png */,
+				BF082F901F9EA2A50049F01C /* simple_picker.png */,
+				BF082F8E1F9E9DD50049F01C /* calculator.png */,
+				BF36E4881F9E809C004E6C0F /* budget.png */,
+				BF36E4861F9E6D30004E6C0F /* img_taxes.png */,
+				BF36E4841F9E69BB004E6C0F /* bg.png */,
+				BF36E4821F9E6897004E6C0F /* logo.png */,
+				BF36E47D1F9E5EF5004E6C0F /* cal_button.png */,
+				BF36E47E1F9E5EF5004E6C0F /* erase_button.png */,
+				BF36E47C1F9E5EF4004E6C0F /* taxes_button.png */,
+				BF36E46E1F9E3584004E6C0F /* ls.png */,
 				9DC593451D787D9C00D65655 /* icons */,
 			);
 			name = Images;
@@ -157,8 +196,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF36E4851F9E69BB004E6C0F /* bg.png in Resources */,
+				BF36E46F1F9E3584004E6C0F /* ls.png in Resources */,
+				BF36E4751F9E4E29004E6C0F /* FranklinGothicMediumCondRegular.ttf in Resources */,
+				BF36E4831F9E6897004E6C0F /* logo.png in Resources */,
+				BF36E4891F9E809C004E6C0F /* budget.png in Resources */,
+				BF082F8F1F9E9DD50049F01C /* calculator.png in Resources */,
+				BF082F951F9EABFB0049F01C /* set.png in Resources */,
 				9D4DEC561D6DDE39001490B9 /* LaunchScreen.storyboard in Resources */,
+				BF36E4871F9E6D30004E6C0F /* img_taxes.png in Resources */,
+				BF36E47F1F9E5EF5004E6C0F /* taxes_button.png in Resources */,
+				BF082F911F9EA2A50049F01C /* simple_picker.png in Resources */,
+				BF082F931F9EA8530049F01C /* simple_picker2.png in Resources */,
+				BF36E4801F9E5EF5004E6C0F /* cal_button.png in Resources */,
 				9D355DC81D70946100D4D755 /* Main.storyboard in Resources */,
+				BF36E4811F9E5EF5004E6C0F /* erase_button.png in Resources */,
 				9D4DEC531D6DDE39001490B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

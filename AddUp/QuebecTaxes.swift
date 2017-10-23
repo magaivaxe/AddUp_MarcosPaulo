@@ -8,8 +8,8 @@ class QuebecTaxes {
     
     //# MARK: - getTaxes
     func getTaxes(initialAmount: Float) -> String {
-        self.gst = initialAmount * 0.05
-        self.qst = initialAmount * 0.09975
+        self.gst = initialAmount * 0.03
+        self.qst = initialAmount * 0.03
         return String(format: "%.2f", (self.gst + self.qst))
     }
     
