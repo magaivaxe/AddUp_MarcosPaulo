@@ -41,7 +41,7 @@
                                 <rect key="frame" x="56" y="651.33333333333337" width="302" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPH-ye-1zk">
-                                        <rect key="frame" x="0.0" y="-0.33333333333337123" width="302" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="302" height="64.333333333333329"/>
                                         <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Go-py-GvM">
-                                <rect key="frame" x="55.333333333333336" y="155.66666666666666" width="90.333333333333314" height="90.333333333333343"/>
+                                <rect key="frame" x="55.000000000000007" y="157" width="90.666666666666686" height="90"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" 9" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -77,7 +77,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMO-Tc-6CU" userLabel="8">
-                                <rect key="frame" x="161.66666666666666" y="155.66666666666666" width="90.666666666666657" height="90.333333333333343"/>
+                                <rect key="frame" x="161.66666666666666" y="157" width="90.666666666666657" height="90"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" 8" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -87,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR8-4k-RDg">
-                                <rect key="frame" x="268.33333333333331" y="155.66666666666666" width="90.333333333333314" height="90.333333333333343"/>
+                                <rect key="frame" x="268.33333333333331" y="157" width="90.666666666666686" height="90"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" 7" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -97,7 +97,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydk-PH-fHB">
-                                <rect key="frame" x="55.333333333333336" y="254.00000000000003" width="90.333333333333314" height="90.333333333333343"/>
+                                <rect key="frame" x="55.000000000000007" y="255.00000000000003" width="90.666666666666686" height="89.333333333333343"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" 6" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -107,7 +107,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLZ-hV-PoN">
-                                <rect key="frame" x="161.66666666666666" y="254.00000000000003" width="90.666666666666657" height="90.333333333333343"/>
+                                <rect key="frame" x="161.66666666666666" y="255.00000000000003" width="90.666666666666657" height="89.333333333333343"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" 5" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -117,7 +117,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwC-xG-Mt7">
-                                <rect key="frame" x="268.33333333333331" y="254.00000000000003" width="90.333333333333314" height="90.333333333333343"/>
+                                <rect key="frame" x="268.33333333333331" y="255.00000000000003" width="90.666666666666686" height="89.333333333333343"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" 4" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -127,7 +127,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0Y-6p-bif">
-                                <rect key="frame" x="55.333333333333336" y="352.33333333333331" width="90.333333333333314" height="90"/>
+                                <rect key="frame" x="55.000000000000007" y="352.33333333333331" width="90.666666666666686" height="90"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" 3" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -150,7 +150,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ms-pA-1gl">
-                                <rect key="frame" x="268.33333333333331" y="352.33333333333331" width="90.333333333333314" height="90"/>
+                                <rect key="frame" x="268.33333333333331" y="352.33333333333331" width="90.666666666666686" height="90"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" 1" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -160,7 +160,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUi-aW-k1u" userLabel="eraser">
-                                <rect key="frame" x="55.333333333333336" y="450.33333333333331" width="90.333333333333314" height="89.999999999999943"/>
+                                <rect key="frame" x="55.000000000000007" y="450.33333333333331" width="90.666666666666686" height="89.666666666666686"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" backgroundImage="erase_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -170,7 +170,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqg-3d-h7j">
-                                <rect key="frame" x="161.66666666666666" y="450.33333333333331" width="90.666666666666657" height="89.999999999999943"/>
+                                <rect key="frame" x="161.66666666666666" y="450.33333333333331" width="90.666666666666657" height="89.666666666666686"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" 0" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -180,7 +180,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nb-8W-mvk">
-                                <rect key="frame" x="268.33333333333331" y="450.33333333333331" width="90.333333333333314" height="89.999999999999943"/>
+                                <rect key="frame" x="268.33333333333331" y="450.33333333333331" width="90.666666666666686" height="89.666666666666686"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" ." backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
@@ -190,7 +190,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJs-q6-vIN">
-                                <rect key="frame" x="268.33333333333331" y="548.33333333333337" width="90.333333333333314" height="90"/>
+                                <rect key="frame" x="268.33333333333331" y="548" width="90.666666666666686" height="89.666666666666629"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
                                 <state key="normal" title=" +" backgroundImage="cal_button.png">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -200,7 +200,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUA-Tq-OgT" userLabel="taxes">
-                                <rect key="frame" x="55.666666666666671" y="548.33333333333337" width="196.66666666666663" height="90"/>
+                                <rect key="frame" x="55.000000000000014" y="548" width="197.33333333333337" height="89.666666666666629"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="35"/>
                                 <state key="normal" title=" Taxes" backgroundImage="taxes_button.png">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -210,7 +210,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OL4-IR-tx3" userLabel="purchases">
-                                <rect key="frame" x="332" y="44" width="62.333333333333314" height="62"/>
+                                <rect key="frame" x="332" y="43.666666666666671" width="63" height="62.666666666666671"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OL4-IR-tx3" secondAttribute="height" multiplier="1:1" id="FqJ-Wm-4dR"/>
                                 </constraints>
@@ -315,13 +315,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="oL6-Cl-FSd">
-                                <rect key="frame" x="96" y="24.666666666666671" width="222" height="100"/>
+                                <rect key="frame" x="96" y="24.666666666666664" width="222" height="99.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oL6-Cl-FSd" secondAttribute="height" multiplier="111:50" id="hfJ-Vf-bi3"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp0-q1-RWQ" userLabel="calculator">
-                                <rect key="frame" x="334" y="45" width="60" height="60"/>
+                                <rect key="frame" x="334" y="45.333333333333343" width="59.333333333333314" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bp0-q1-RWQ" secondAttribute="height" multiplier="1:1" id="uj1-Id-1re"/>
                                 </constraints>
@@ -331,7 +331,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Xr-ai-dcN">
-                                <rect key="frame" x="32" y="147" width="350" height="362"/>
+                                <rect key="frame" x="32.333333333333343" y="147" width="349.33333333333326" height="362"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Xr-ai-dcN" secondAttribute="height" multiplier="175:181" id="fEu-wx-lk8"/>
@@ -346,13 +346,13 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A42-MK-Od9" userLabel="simple_picker">
-                                <rect key="frame" x="32" y="553.33333333333337" width="180" height="140"/>
+                                <rect key="frame" x="32.333333333333329" y="553.33333333333337" width="179.66666666666669" height="140"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple_picker2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HlV-3U-p6o">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="140"/>
                                     </imageView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dO-p0-XUY" userLabel="simple_picker">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="140"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -374,7 +374,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMJ-7v-4UZ" userLabel="set_budget">
-                                <rect key="frame" x="232" y="591" width="150" height="64"/>
+                                <rect key="frame" x="231.66666666666663" y="591" width="150" height="64"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="set.png" translatesAutoresizingMaskIntoConstraints="NO" id="k7f-pG-QU9" userLabel="set_budget">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="64"/>
