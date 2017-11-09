@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -25,279 +25,333 @@
                         <viewControllerLayoutGuide type="bottom" id="7tK-zj-qTN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="main">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Er-pf-e9G" userLabel="bg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Er-pf-e9G" userLabel="bg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-3B-EDq">
-                                <rect key="frame" x="96" y="24.666666666666664" width="222" height="99.666666666666686"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="TDK-3B-EDq" secondAttribute="height" multiplier="111:50" id="UYU-p0-dcj"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NtW-Ts-qS2" userLabel="taxes">
-                                <rect key="frame" x="56" y="651.33333333333337" width="302" height="65"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlw-gN-tAS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPH-ye-1zk">
-                                        <rect key="frame" x="0.0" y="0.0" width="302" height="64.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="28"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_taxes.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zjb-db-nlD">
-                                        <rect key="frame" x="0.0" y="0.0" width="302" height="65"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-3B-EDq">
+                                        <rect key="frame" x="69.5" y="17" width="178.5" height="80.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TDK-3B-EDq" secondAttribute="height" multiplier="51:23" id="NcZ-Ow-wyO"/>
+                                        </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OL4-IR-tx3" userLabel="purchases">
+                                        <rect key="frame" x="268" y="19" width="72.5" height="72.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OL4-IR-tx3" secondAttribute="height" multiplier="1:1" id="x5F-Dh-D0Y"/>
+                                        </constraints>
+                                        <state key="normal" image="budget.png"/>
+                                        <connections>
+                                            <segue destination="DFU-fL-koU" kind="presentation" identifier="mySeg" id="rri-rb-fbj"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Zjb-db-nlD" firstAttribute="centerY" secondItem="NtW-Ts-qS2" secondAttribute="centerY" id="AW3-ZW-vEt"/>
-                                    <constraint firstAttribute="trailing" secondItem="Zjb-db-nlD" secondAttribute="trailing" id="Do9-s8-ydk"/>
-                                    <constraint firstAttribute="bottom" secondItem="GPH-ye-1zk" secondAttribute="bottom" id="Fo5-im-sPG"/>
-                                    <constraint firstItem="GPH-ye-1zk" firstAttribute="leading" secondItem="NtW-Ts-qS2" secondAttribute="leading" id="Hvb-aK-CxR"/>
-                                    <constraint firstAttribute="width" secondItem="NtW-Ts-qS2" secondAttribute="height" multiplier="302:65" id="KA7-ze-0if"/>
-                                    <constraint firstItem="GPH-ye-1zk" firstAttribute="centerY" secondItem="NtW-Ts-qS2" secondAttribute="centerY" id="Lue-g7-kdm"/>
-                                    <constraint firstItem="Zjb-db-nlD" firstAttribute="centerX" secondItem="NtW-Ts-qS2" secondAttribute="centerX" id="OWi-Ux-mXg"/>
-                                    <constraint firstAttribute="bottom" secondItem="Zjb-db-nlD" secondAttribute="bottom" id="RTa-4w-Oev"/>
-                                    <constraint firstItem="Zjb-db-nlD" firstAttribute="top" secondItem="NtW-Ts-qS2" secondAttribute="top" id="Uoq-Zb-IFD"/>
-                                    <constraint firstItem="Zjb-db-nlD" firstAttribute="leading" secondItem="NtW-Ts-qS2" secondAttribute="leading" id="WZb-ZA-Fm1"/>
-                                    <constraint firstAttribute="trailing" secondItem="GPH-ye-1zk" secondAttribute="trailing" id="YPf-x2-chE"/>
-                                    <constraint firstItem="GPH-ye-1zk" firstAttribute="top" secondItem="NtW-Ts-qS2" secondAttribute="top" id="YRk-6z-N2K"/>
-                                    <constraint firstItem="GPH-ye-1zk" firstAttribute="centerX" secondItem="NtW-Ts-qS2" secondAttribute="centerX" id="pSN-sg-mgC"/>
+                                    <constraint firstAttribute="trailing" secondItem="TDK-3B-EDq" secondAttribute="leading" multiplier="5.4117" id="DPn-BU-Kgg"/>
+                                    <constraint firstItem="TDK-3B-EDq" firstAttribute="height" secondItem="vlw-gN-tAS" secondAttribute="height" multiplier="0.7" id="LEc-ce-WcN"/>
+                                    <constraint firstItem="TDK-3B-EDq" firstAttribute="centerY" secondItem="vlw-gN-tAS" secondAttribute="centerY" id="SBU-5h-2uJ"/>
+                                    <constraint firstItem="OL4-IR-tx3" firstAttribute="height" secondItem="TDK-3B-EDq" secondAttribute="height" multiplier="0.9" id="U4q-3a-931"/>
+                                    <constraint firstAttribute="bottom" secondItem="OL4-IR-tx3" secondAttribute="top" multiplier="6" id="XbN-36-Cen"/>
+                                    <constraint firstAttribute="height" constant="115" id="vkh-7O-h1Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="OL4-IR-tx3" secondAttribute="leading" multiplier="1.4" id="yvk-jv-dha"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Go-py-GvM">
-                                <rect key="frame" x="55.000000000000007" y="156.66666666666666" width="90.666666666666686" height="90"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 9" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h7-04-HYI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMO-Tc-6CU" userLabel="8">
-                                <rect key="frame" x="161.66666666666666" y="156.66666666666666" width="90.666666666666657" height="90"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 8" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xaQ-Ah-pcP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR8-4k-RDg">
-                                <rect key="frame" x="268.33333333333331" y="156.66666666666666" width="90.666666666666686" height="90"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 7" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dn7-dt-wDU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydk-PH-fHB">
-                                <rect key="frame" x="55.000000000000007" y="254.66666666666666" width="90.666666666666686" height="89.666666666666657"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 6" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4DO-HG-fU1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLZ-hV-PoN">
-                                <rect key="frame" x="161.66666666666666" y="254.66666666666666" width="90.666666666666657" height="89.666666666666657"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 5" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RpJ-Mg-v7T"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwC-xG-Mt7">
-                                <rect key="frame" x="268.33333333333331" y="254.66666666666666" width="90.666666666666686" height="89.666666666666657"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 4" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mar-aD-j7z"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0Y-6p-bif">
-                                <rect key="frame" x="55.000000000000007" y="352.33333333333331" width="90.666666666666686" height="90"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 3" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wga-dl-di5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmr-O3-jD7" userLabel="2">
-                                <rect key="frame" x="161.66666666666666" y="352.33333333333331" width="90.666666666666657" height="90"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTC-MH-KDk">
+                                <rect key="frame" x="0.0" y="115" width="375" height="467"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmn-5c-xtV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="592.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wRG-IG-olQ">
+                                                <rect key="frame" x="20" y="20" width="335" height="552.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="axO-YZ-8tS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="105"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Go-py-GvM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="105"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="1Go-py-GvM" secondAttribute="height" multiplier="82:81" id="mc1-wP-CyP"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 9" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h7-04-HYI"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMO-Tc-6CU" userLabel="8">
+                                                                <rect key="frame" x="114.5" y="0.0" width="106" height="105"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="gMO-Tc-6CU" secondAttribute="height" multiplier="82:81" id="eOx-qo-ihv"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 8" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xaQ-Ah-pcP"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR8-4k-RDg">
+                                                                <rect key="frame" x="228.5" y="0.0" width="106.5" height="105"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="WR8-4k-RDg" secondAttribute="height" multiplier="82:81" id="5jg-Hy-k4B"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 7" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dn7-dt-wDU"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jyx-CN-xq8">
+                                                        <rect key="frame" x="0.0" y="113" width="335" height="104.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydk-PH-fHB">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="104.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="ydk-PH-fHB" secondAttribute="height" multiplier="82:81" id="mFS-io-Js1"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 6" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4DO-HG-fU1"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLZ-hV-PoN">
+                                                                <rect key="frame" x="114.5" y="0.0" width="106" height="104.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="TLZ-hV-PoN" secondAttribute="height" multiplier="82:81" id="AXl-tJ-CXi"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 5" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RpJ-Mg-v7T"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwC-xG-Mt7">
+                                                                <rect key="frame" x="228.5" y="0.0" width="106.5" height="104.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="HwC-xG-Mt7" secondAttribute="height" multiplier="82:81" id="kqq-DB-s3l"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 4" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mar-aD-j7z"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b8n-M2-Qvv">
+                                                        <rect key="frame" x="0.0" y="225.5" width="335" height="105"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0Y-6p-bif">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106" height="105"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="m0Y-6p-bif" secondAttribute="height" multiplier="82:81" id="Vsi-0L-uxi"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 3" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wga-dl-di5"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmr-O3-jD7" userLabel="2">
+                                                                <rect key="frame" x="114" y="0.0" width="107" height="105"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Vmr-O3-jD7" secondAttribute="height" multiplier="82:81" id="af3-eV-eFt"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 2" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qWA-0n-Jce"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ms-pA-1gl">
+                                                                <rect key="frame" x="229" y="0.0" width="106" height="105"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="3Ms-pA-1gl" secondAttribute="height" multiplier="82:81" id="iGh-ae-P4T"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 1" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZxC-hO-nb1"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="waY-Ug-0Fh">
+                                                        <rect key="frame" x="0.0" y="338.5" width="335" height="104.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUi-aW-k1u" userLabel="eraser">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="104.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="yUi-aW-k1u" secondAttribute="height" multiplier="82:81" id="UlC-qt-ySj"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" backgroundImage="erase_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ra-PF-jeg"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqg-3d-h7j">
+                                                                <rect key="frame" x="114.5" y="0.0" width="106" height="104.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="cqg-3d-h7j" secondAttribute="height" multiplier="82:81" id="4dc-WD-C0I"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" 0" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Bx-te-ZuI"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nb-8W-mvk">
+                                                                <rect key="frame" x="228.5" y="0.0" width="106.5" height="104.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="4Nb-8W-mvk" secondAttribute="height" multiplier="82:81" id="VXx-lC-Vhc"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" ." backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fo3-o6-dgS"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t0M-OQ-0va">
+                                                        <rect key="frame" x="0.0" y="451" width="335" height="101.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUA-Tq-OgT" userLabel="taxes">
+                                                                <rect key="frame" x="0.0" y="0.0" width="224" height="101.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="xUA-Tq-OgT" secondAttribute="height" multiplier="179:81" id="aCN-4J-f5i"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="35"/>
+                                                                <state key="normal" title=" Taxes" backgroundImage="taxes_button.png">
+                                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emw-OL-gsT"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJs-q6-vIN">
+                                                                <rect key="frame" x="232" y="0.0" width="103" height="101.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="WJs-q6-vIN" secondAttribute="height" multiplier="82:81" id="aNM-Ab-Bz3"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
+                                                                <state key="normal" title=" +" backgroundImage="cal_button.png">
+                                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UIr-gh-bl5"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wRG-IG-olQ" firstAttribute="leading" secondItem="Gmn-5c-xtV" secondAttribute="leading" constant="20" id="L8y-Zg-dB6"/>
+                                            <constraint firstAttribute="height" secondItem="wRG-IG-olQ" secondAttribute="height" constant="40" id="Nic-EI-0Kk"/>
+                                            <constraint firstItem="wRG-IG-olQ" firstAttribute="top" secondItem="Gmn-5c-xtV" secondAttribute="top" constant="20" id="THY-Uw-oK2"/>
+                                            <constraint firstAttribute="trailing" secondItem="wRG-IG-olQ" secondAttribute="trailing" constant="20" id="kW6-yW-f47"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Vmr-O3-jD7" secondAttribute="height" multiplier="1:1" id="Xy6-pA-fsq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gmn-5c-xtV" secondAttribute="trailing" id="Cq0-qT-vL4"/>
+                                    <constraint firstItem="Gmn-5c-xtV" firstAttribute="top" secondItem="dTC-MH-KDk" secondAttribute="top" id="Gap-RX-42A"/>
+                                    <constraint firstItem="Gmn-5c-xtV" firstAttribute="width" secondItem="dTC-MH-KDk" secondAttribute="width" id="QJS-CH-y9B"/>
+                                    <constraint firstItem="Gmn-5c-xtV" firstAttribute="leading" secondItem="dTC-MH-KDk" secondAttribute="leading" id="TnO-kc-wqL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gmn-5c-xtV" secondAttribute="bottom" id="bTu-cR-xTY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 2" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qWA-0n-Jce"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ms-pA-1gl">
-                                <rect key="frame" x="268.33333333333331" y="352.33333333333331" width="90.666666666666686" height="90"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 1" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZxC-hO-nb1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUi-aW-k1u" userLabel="eraser">
-                                <rect key="frame" x="55.000000000000007" y="450.33333333333331" width="90.666666666666686" height="89.999999999999943"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" backgroundImage="erase_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ra-PF-jeg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqg-3d-h7j">
-                                <rect key="frame" x="161.66666666666666" y="450.33333333333331" width="90.666666666666657" height="89.999999999999943"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" 0" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Bx-te-ZuI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nb-8W-mvk">
-                                <rect key="frame" x="268.33333333333331" y="450.33333333333331" width="90.666666666666686" height="89.999999999999943"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" ." backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fo3-o6-dgS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJs-q6-vIN">
-                                <rect key="frame" x="268.33333333333331" y="548.33333333333337" width="90.666666666666686" height="90.666666666666629"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="50"/>
-                                <state key="normal" title=" +" backgroundImage="cal_button.png">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UIr-gh-bl5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUA-Tq-OgT" userLabel="taxes">
-                                <rect key="frame" x="55.000000000000014" y="548.33333333333337" width="197.33333333333337" height="90.666666666666629"/>
-                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="35"/>
-                                <state key="normal" title=" Taxes" backgroundImage="taxes_button.png">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emw-OL-gsT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OL4-IR-tx3" userLabel="purchases">
-                                <rect key="frame" x="332" y="44" width="62.666666666666686" height="62.333333333333343"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytm-jI-cel">
+                                <rect key="frame" x="0.0" y="582" width="375" height="85"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NtW-Ts-qS2" userLabel="taxes">
+                                        <rect key="frame" x="47.5" y="12.5" width="279" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPH-ye-1zk">
+                                                <rect key="frame" x="0.0" y="0.0" width="279" height="59"/>
+                                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_taxes.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zjb-db-nlD">
+                                                <rect key="frame" x="0.0" y="0.0" width="279" height="59.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Zjb-db-nlD" firstAttribute="width" secondItem="NtW-Ts-qS2" secondAttribute="width" id="Dew-dK-hiN"/>
+                                            <constraint firstItem="Zjb-db-nlD" firstAttribute="centerY" secondItem="NtW-Ts-qS2" secondAttribute="centerY" id="N8B-iE-Rza"/>
+                                            <constraint firstItem="GPH-ye-1zk" firstAttribute="centerX" secondItem="NtW-Ts-qS2" secondAttribute="centerX" id="SUm-5k-we2"/>
+                                            <constraint firstAttribute="width" secondItem="NtW-Ts-qS2" secondAttribute="height" multiplier="136:29" id="cci-vE-Xbr"/>
+                                            <constraint firstItem="Zjb-db-nlD" firstAttribute="centerX" secondItem="NtW-Ts-qS2" secondAttribute="centerX" id="eDl-db-GHQ"/>
+                                            <constraint firstItem="GPH-ye-1zk" firstAttribute="centerY" secondItem="NtW-Ts-qS2" secondAttribute="centerY" id="hv3-Ch-Tae"/>
+                                            <constraint firstItem="GPH-ye-1zk" firstAttribute="height" secondItem="NtW-Ts-qS2" secondAttribute="height" id="tlM-Wn-BZE"/>
+                                            <constraint firstItem="Zjb-db-nlD" firstAttribute="height" secondItem="NtW-Ts-qS2" secondAttribute="height" id="xeT-U3-0j4"/>
+                                            <constraint firstItem="GPH-ye-1zk" firstAttribute="width" secondItem="NtW-Ts-qS2" secondAttribute="width" id="zDZ-Ag-Wij"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="OL4-IR-tx3" secondAttribute="height" multiplier="1:1" id="FqJ-Wm-4dR"/>
+                                    <constraint firstItem="NtW-Ts-qS2" firstAttribute="height" secondItem="ytm-jI-cel" secondAttribute="height" multiplier="0.7" id="3c1-ZA-J1z"/>
+                                    <constraint firstItem="NtW-Ts-qS2" firstAttribute="centerY" secondItem="ytm-jI-cel" secondAttribute="centerY" id="PAR-kX-gA2"/>
+                                    <constraint firstItem="NtW-Ts-qS2" firstAttribute="centerX" secondItem="ytm-jI-cel" secondAttribute="centerX" id="bHQ-ub-EKk"/>
+                                    <constraint firstAttribute="height" constant="85" id="pev-wt-pkz"/>
                                 </constraints>
-                                <state key="normal" image="budget.png"/>
-                                <connections>
-                                    <segue destination="DFU-fL-koU" kind="presentation" identifier="mySeg" id="rri-rb-fbj"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1Er-pf-e9G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Gi-Lv-35R"/>
-                            <constraint firstItem="3Ms-pA-1gl" firstAttribute="width" secondItem="Vmr-O3-jD7" secondAttribute="width" id="2IW-Ig-tS5"/>
-                            <constraint firstItem="1Go-py-GvM" firstAttribute="height" secondItem="gMO-Tc-6CU" secondAttribute="height" id="2ZY-jl-TH3"/>
-                            <constraint firstItem="1Go-py-GvM" firstAttribute="width" secondItem="gMO-Tc-6CU" secondAttribute="width" id="3VC-uX-sxe"/>
-                            <constraint firstItem="xUA-Tq-OgT" firstAttribute="top" secondItem="WJs-q6-vIN" secondAttribute="top" id="3Yg-2t-WpR"/>
-                            <constraint firstItem="gMO-Tc-6CU" firstAttribute="leading" secondItem="1Go-py-GvM" secondAttribute="trailing" constant="16" id="4O5-Qc-ud1"/>
-                            <constraint firstItem="cqg-3d-h7j" firstAttribute="top" secondItem="Vmr-O3-jD7" secondAttribute="bottom" constant="8" id="4eu-nE-RkI"/>
-                            <constraint firstItem="xUA-Tq-OgT" firstAttribute="width" secondItem="WJs-q6-vIN" secondAttribute="width" multiplier="2.1777" id="5nR-TL-XVE"/>
-                            <constraint firstItem="WJs-q6-vIN" firstAttribute="leading" secondItem="xUA-Tq-OgT" secondAttribute="trailing" constant="16" id="64W-zJ-7qv"/>
-                            <constraint firstItem="WR8-4k-RDg" firstAttribute="height" secondItem="gMO-Tc-6CU" secondAttribute="height" id="8IX-Xs-k43"/>
-                            <constraint firstItem="3Ms-pA-1gl" firstAttribute="top" secondItem="Vmr-O3-jD7" secondAttribute="top" id="9hb-Vw-fz0"/>
-                            <constraint firstItem="OL4-IR-tx3" firstAttribute="centerY" secondItem="TDK-3B-EDq" secondAttribute="centerY" id="9sQ-F9-MrI"/>
-                            <constraint firstItem="NtW-Ts-qS2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B1z-qX-xt4"/>
-                            <constraint firstItem="xUA-Tq-OgT" firstAttribute="height" secondItem="WJs-q6-vIN" secondAttribute="height" id="Bl3-hc-4zY"/>
-                            <constraint firstItem="OL4-IR-tx3" firstAttribute="width" secondItem="TDK-3B-EDq" secondAttribute="width" multiplier="0.2801" id="DrU-fr-fUm"/>
-                            <constraint firstItem="Vmr-O3-jD7" firstAttribute="leading" secondItem="m0Y-6p-bif" secondAttribute="trailing" constant="16" id="Ey8-J4-WYR"/>
-                            <constraint firstItem="HwC-xG-Mt7" firstAttribute="top" secondItem="TLZ-hV-PoN" secondAttribute="top" id="GJn-ey-znK"/>
-                            <constraint firstItem="gMO-Tc-6CU" firstAttribute="width" secondItem="TLZ-hV-PoN" secondAttribute="width" id="GiU-fP-cSO"/>
-                            <constraint firstAttribute="trailing" secondItem="1Er-pf-e9G" secondAttribute="trailing" id="HFc-Cz-DNF"/>
-                            <constraint firstItem="NtW-Ts-qS2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0883" id="ISM-C2-GAC"/>
-                            <constraint firstItem="cqg-3d-h7j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JuY-dv-J7J"/>
-                            <constraint firstItem="3Ms-pA-1gl" firstAttribute="leading" secondItem="Vmr-O3-jD7" secondAttribute="trailing" constant="16" id="LV9-wk-GvZ"/>
-                            <constraint firstItem="TLZ-hV-PoN" firstAttribute="width" secondItem="Vmr-O3-jD7" secondAttribute="width" id="MvU-dA-s8g"/>
-                            <constraint firstItem="gMO-Tc-6CU" firstAttribute="height" secondItem="TLZ-hV-PoN" secondAttribute="height" id="NmN-17-Qah"/>
-                            <constraint firstItem="WR8-4k-RDg" firstAttribute="top" secondItem="gMO-Tc-6CU" secondAttribute="top" id="Nrg-VQ-46t"/>
-                            <constraint firstItem="7tK-zj-qTN" firstAttribute="top" secondItem="NtW-Ts-qS2" secondAttribute="top" multiplier="1.13" id="OBO-5j-Xgh"/>
-                            <constraint firstItem="Vmr-O3-jD7" firstAttribute="top" secondItem="TLZ-hV-PoN" secondAttribute="bottom" constant="8" id="Q7z-9Y-l9C"/>
-                            <constraint firstItem="yUi-aW-k1u" firstAttribute="top" secondItem="cqg-3d-h7j" secondAttribute="top" id="QaY-Qy-yEU"/>
-                            <constraint firstItem="4Nb-8W-mvk" firstAttribute="leading" secondItem="cqg-3d-h7j" secondAttribute="trailing" constant="16" id="RA7-9d-no4"/>
-                            <constraint firstItem="WJs-q6-vIN" firstAttribute="width" secondItem="4Nb-8W-mvk" secondAttribute="width" id="RFh-z6-pQr"/>
-                            <constraint firstItem="1Go-py-GvM" firstAttribute="top" secondItem="gMO-Tc-6CU" secondAttribute="top" id="RoE-wu-1vt"/>
-                            <constraint firstItem="gMO-Tc-6CU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UGz-je-NEs"/>
-                            <constraint firstItem="TDK-3B-EDq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1358" id="VsS-Jp-nW0"/>
-                            <constraint firstItem="HwC-xG-Mt7" firstAttribute="width" secondItem="TLZ-hV-PoN" secondAttribute="width" id="Vzn-v0-zwJ"/>
-                            <constraint firstItem="ydk-PH-fHB" firstAttribute="width" secondItem="TLZ-hV-PoN" secondAttribute="width" id="WPE-2w-wGs"/>
-                            <constraint firstItem="WJs-q6-vIN" firstAttribute="centerX" secondItem="4Nb-8W-mvk" secondAttribute="centerX" id="Wpf-vH-JXS"/>
-                            <constraint firstItem="4Nb-8W-mvk" firstAttribute="top" secondItem="cqg-3d-h7j" secondAttribute="top" id="YxR-54-PEa"/>
-                            <constraint firstItem="gMO-Tc-6CU" firstAttribute="leading" secondItem="1Go-py-GvM" secondAttribute="trailing" constant="16" id="Zwe-Yd-n7x"/>
-                            <constraint firstItem="m0Y-6p-bif" firstAttribute="height" secondItem="Vmr-O3-jD7" secondAttribute="height" id="aJ5-Bj-752"/>
-                            <constraint firstItem="OL4-IR-tx3" firstAttribute="leading" secondItem="TDK-3B-EDq" secondAttribute="trailing" constant="14" id="aze-V9-6Hk"/>
-                            <constraint firstItem="WJs-q6-vIN" firstAttribute="top" secondItem="4Nb-8W-mvk" secondAttribute="bottom" constant="8" id="b7T-nF-6cA"/>
-                            <constraint firstItem="4Nb-8W-mvk" firstAttribute="height" secondItem="cqg-3d-h7j" secondAttribute="height" id="bPO-OQ-hMq"/>
-                            <constraint firstItem="yUi-aW-k1u" firstAttribute="height" secondItem="cqg-3d-h7j" secondAttribute="height" id="bPm-Lb-e7b"/>
-                            <constraint firstItem="m0Y-6p-bif" firstAttribute="top" secondItem="Vmr-O3-jD7" secondAttribute="top" id="bqb-uI-NOT"/>
-                            <constraint firstItem="Vmr-O3-jD7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="din-35-C7Z"/>
-                            <constraint firstItem="4Nb-8W-mvk" firstAttribute="width" secondItem="cqg-3d-h7j" secondAttribute="width" id="eKo-pd-ZgJ"/>
-                            <constraint firstItem="HwC-xG-Mt7" firstAttribute="height" secondItem="TLZ-hV-PoN" secondAttribute="height" id="faZ-MB-v1O"/>
-                            <constraint firstItem="TLZ-hV-PoN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fe1-hU-gTD"/>
-                            <constraint firstItem="cqg-3d-h7j" firstAttribute="height" secondItem="Vmr-O3-jD7" secondAttribute="height" id="fiE-9G-wuV"/>
-                            <constraint firstItem="TDK-3B-EDq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1f-Fg-2s4"/>
-                            <constraint firstItem="cqg-3d-h7j" firstAttribute="width" secondItem="Vmr-O3-jD7" secondAttribute="width" id="g3o-8u-XCB"/>
-                            <constraint firstItem="ydk-PH-fHB" firstAttribute="top" secondItem="TLZ-hV-PoN" secondAttribute="top" id="ggk-lc-8Ri"/>
-                            <constraint firstItem="3Ms-pA-1gl" firstAttribute="height" secondItem="Vmr-O3-jD7" secondAttribute="height" id="hD2-hs-OQP"/>
-                            <constraint firstItem="TLZ-hV-PoN" firstAttribute="leading" secondItem="ydk-PH-fHB" secondAttribute="trailing" constant="16" id="jqS-MU-ijm"/>
-                            <constraint firstItem="WR8-4k-RDg" firstAttribute="leading" secondItem="gMO-Tc-6CU" secondAttribute="trailing" constant="16" id="kOE-cl-oj9"/>
-                            <constraint firstItem="yUi-aW-k1u" firstAttribute="width" secondItem="cqg-3d-h7j" secondAttribute="width" id="laa-mw-vgf"/>
-                            <constraint firstItem="HwC-xG-Mt7" firstAttribute="leading" secondItem="TLZ-hV-PoN" secondAttribute="trailing" constant="16" id="lkP-1o-m9i"/>
-                            <constraint firstItem="WJs-q6-vIN" firstAttribute="height" secondItem="4Nb-8W-mvk" secondAttribute="height" id="lqC-zh-oEN"/>
-                            <constraint firstItem="1Er-pf-e9G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="o6F-03-DwP"/>
-                            <constraint firstItem="cqg-3d-h7j" firstAttribute="leading" secondItem="yUi-aW-k1u" secondAttribute="trailing" constant="16" id="qzw-I2-J8n"/>
-                            <constraint firstItem="7tK-zj-qTN" firstAttribute="top" secondItem="TDK-3B-EDq" secondAttribute="top" multiplier="30" id="sNm-HZ-IIO"/>
-                            <constraint firstItem="TLZ-hV-PoN" firstAttribute="height" secondItem="Vmr-O3-jD7" secondAttribute="height" id="uCW-JL-rs0"/>
-                            <constraint firstItem="Vmr-O3-jD7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.08" id="v1y-X5-3sV"/>
-                            <constraint firstItem="WR8-4k-RDg" firstAttribute="width" secondItem="gMO-Tc-6CU" secondAttribute="width" id="vBP-ka-LO3"/>
-                            <constraint firstItem="WJs-q6-vIN" firstAttribute="leading" secondItem="xUA-Tq-OgT" secondAttribute="trailing" constant="16" id="wUr-Bp-9f2"/>
-                            <constraint firstItem="Vmr-O3-jD7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1222" id="xDq-MI-NnS"/>
-                            <constraint firstItem="7tK-zj-qTN" firstAttribute="top" secondItem="1Er-pf-e9G" secondAttribute="bottom" id="ybr-iu-j4l"/>
-                            <constraint firstItem="m0Y-6p-bif" firstAttribute="width" secondItem="Vmr-O3-jD7" secondAttribute="width" id="yex-6T-JdL"/>
-                            <constraint firstItem="TLZ-hV-PoN" firstAttribute="top" secondItem="gMO-Tc-6CU" secondAttribute="bottom" constant="8" id="zRR-TS-KAE"/>
-                            <constraint firstItem="ydk-PH-fHB" firstAttribute="height" secondItem="TLZ-hV-PoN" secondAttribute="height" id="zWp-Lu-H1x"/>
+                            <constraint firstItem="ytm-jI-cel" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="43A-bW-Uvh"/>
+                            <constraint firstItem="dTC-MH-KDk" firstAttribute="bottom" secondItem="ytm-jI-cel" secondAttribute="top" id="4XK-bg-y6q"/>
+                            <constraint firstItem="vlw-gN-tAS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8mQ-Pd-sus"/>
+                            <constraint firstItem="dTC-MH-KDk" firstAttribute="top" secondItem="vlw-gN-tAS" secondAttribute="bottom" id="KZb-dN-3Bf"/>
+                            <constraint firstItem="7tK-zj-qTN" firstAttribute="top" secondItem="ytm-jI-cel" secondAttribute="bottom" id="OgN-q0-FlO"/>
+                            <constraint firstAttribute="trailing" secondItem="vlw-gN-tAS" secondAttribute="trailing" id="cyf-Qx-zcZ"/>
+                            <constraint firstAttribute="trailing" secondItem="dTC-MH-KDk" secondAttribute="trailing" id="hbn-YL-PU0"/>
+                            <constraint firstItem="dTC-MH-KDk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vMz-en-am2"/>
+                            <constraint firstAttribute="trailing" secondItem="ytm-jI-cel" secondAttribute="trailing" id="vqq-0O-xyQ"/>
+                            <constraint firstItem="vlw-gN-tAS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w8j-71-ySG"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="-157"/>
+            <point key="canvasLocation" x="-826.39999999999998" y="-157.87106446776613"/>
         </scene>
         <!--Table Controller-->
         <scene sceneID="dwR-HK-IpI">
@@ -308,20 +362,20 @@
                         <viewControllerLayoutGuide type="bottom" id="xII-fM-wEj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TUO-KN-Llf" userLabel="main_2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="GAx-fa-Dgd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="oL6-Cl-FSd">
-                                <rect key="frame" x="96" y="24.666666666666664" width="222" height="99.666666666666686"/>
+                                <rect key="frame" x="86.5" y="22" width="202" height="91"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oL6-Cl-FSd" secondAttribute="height" multiplier="111:50" id="hfJ-Vf-bi3"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp0-q1-RWQ" userLabel="calculator">
-                                <rect key="frame" x="334" y="45.333333333333343" width="60" height="60"/>
+                                <rect key="frame" x="304.5" y="41" width="54.5" height="54.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bp0-q1-RWQ" secondAttribute="height" multiplier="1:1" id="uj1-Id-1re"/>
                                 </constraints>
@@ -331,7 +385,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Xr-ai-dcN">
-                                <rect key="frame" x="32.333333333333343" y="147" width="349.33333333333326" height="362"/>
+                                <rect key="frame" x="29" y="133" width="317" height="328.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Xr-ai-dcN" secondAttribute="height" multiplier="175:181" id="fEu-wx-lk8"/>
@@ -346,13 +400,13 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A42-MK-Od9" userLabel="simple_picker">
-                                <rect key="frame" x="32.333333333333329" y="553.33333333333337" width="179.66666666666669" height="140"/>
+                                <rect key="frame" x="29" y="501.5" width="162.5" height="127"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple_picker2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HlV-3U-p6o">
-                                        <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="127"/>
                                     </imageView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dO-p0-XUY" userLabel="simple_picker">
-                                        <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="127"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -374,13 +428,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMJ-7v-4UZ" userLabel="set_budget">
-                                <rect key="frame" x="231" y="591" width="150.66666666666663" height="64"/>
+                                <rect key="frame" x="211" y="536" width="135" height="57.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="set.png" translatesAutoresizingMaskIntoConstraints="NO" id="k7f-pG-QU9" userLabel="set_budget">
-                                        <rect key="frame" x="0.0" y="0.0" width="150.66666666666666" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="57.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlN-PR-Jcg" userLabel="set_budget">
-                                        <rect key="frame" x="0.0" y="0.0" width="150.66666666666666" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="57.5"/>
                                         <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="30"/>
                                         <state key="normal" title="             SET">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
