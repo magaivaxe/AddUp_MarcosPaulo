@@ -32,6 +32,9 @@ class ViewController: UIViewController {
         }
         self.h = self.deviceHeight.frame.size.height
         self.w = self.deviceHeight.frame.size.width + 170
+		
+		
+		
     }
     
     //# MARK: - informationToDisplay
